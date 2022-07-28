@@ -1,0 +1,4 @@
+name: Quarkus APIstax
+release:
+  current-version: 0.1.0-SNAPSHOT
+  next-version: 0.1.0

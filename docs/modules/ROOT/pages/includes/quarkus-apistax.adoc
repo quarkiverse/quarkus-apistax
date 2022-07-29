@@ -1,0 +1,23 @@
+
+:summaryTableId: quarkus-apistax
+[.configuration-legend]
+icon:lock[title=Fixed at build time] Configuration property fixed at build time - All other configuration properties are overridable at runtime
+[.configuration-reference.searchable, cols="80,.^10,.^10"]
+|===
+
+h|[[quarkus-apistax_configuration]]link:#quarkus-apistax_configuration[Configuration property]
+
+h|Type
+h|Default
+
+a| [[quarkus-apistax_quarkus.apistax.api-key]]`link:#quarkus-apistax_quarkus.apistax.api-key[quarkus.apistax.api-key]`
+
+[.description]
+--
+The APIstax API key. Get one via https://apistax.io
+
+Environment variable: `+++QUARKUS_APISTAX_API_KEY+++`
+--|string 
+|required icon:exclamation-circle[title=Configuration property is required]
+
+|===

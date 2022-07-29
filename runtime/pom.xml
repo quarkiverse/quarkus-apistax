@@ -76,7 +76,7 @@
                             <generatorName>java</generatorName>
                             <generateModelTests>false</generateModelTests>
                             <generateModelDocumentation>false</generateModelDocumentation>
-                            <generateApis>true</generateApis>
+                            <generateApis>false</generateApis>
                             <generateApiTests>false</generateApiTests>
                             <generateApiDocumentation>false</generateApiDocumentation>
                             <generateSupportingFiles>true</generateSupportingFiles>

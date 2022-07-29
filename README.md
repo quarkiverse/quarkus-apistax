@@ -29,7 +29,7 @@ Add the following dependency to your build file:
 implementation("io.quarkiverse.apistax:quarkus-apistax:$latestVersion")
 ```
 
-Get an APIstax API key [here](https://app.apistax.io/api-keys) and add it to your `application.properties` file:
+Get your APIstax API key [here](https://app.apistax.io/api-keys) and add it to your `application.properties` file:
 
 ```properties
 quarkus.apistax.api-key=API-KEY

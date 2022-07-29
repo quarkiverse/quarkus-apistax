@@ -1,9 +1,9 @@
 name: Apistax
-#description: Do something useful.
+description: Secure and reliable APIs for your common business needs.
 metadata:
-#  keywords:
-#    - apistax
-#  guide: https://quarkiverse.github.io/quarkiverse-docs/apistax/dev/
-#  categories:
-#    - "miscellaneous"
-#  status: "preview"
+  keywords:
+    - apistax
+  guide: https://quarkiverse.github.io/quarkiverse-docs/apistax/dev/
+  categories:
+    - "miscellaneous"
+  status: "preview"

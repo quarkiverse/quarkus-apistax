@@ -2,16 +2,16 @@
 openapi: 3.0.3
 info:
   title: APIstax
-  version: 1.0.0
+  version: 1.0.1
 servers:
-- url: https://api.apistax.io/
+  - url: https://api.apistax.io/
 security:
-- ApiKeyHeader: []
+  - ApiKeyHeader: []
 paths:
   /v1/html-to-pdf:
     post:
       tags:
-      - HTML to PDF
+        - HTML to PDF
       summary: Convert HTML to PDF
       operationId: convertHtmlToPdf
       requestBody:
@@ -27,93 +27,93 @@ paths:
           content:
             application/pdf:
               schema:
-                format: binary
+                format: byte
                 type: string
   /v1/epc-qr-code:
     get:
       tags:
-      - EPC QR Code
+        - EPC QR Code
       summary: Generate a valid EPC QR Code
       operationId: generateEpcQrCode
       parameters:
-      - name: bic
-        in: query
-        description: The bank identifier code of the recipient bank
-        required: false
-        schema:
-          type: string
-      - name: iban
-        in: query
-        description: The international bank account number of the recipient
-        required: true
-        schema:
-          type: string
-      - name: recipient
-        in: query
-        description: The recipients name
-        required: true
-        schema:
-          type: string
-      - name: currency
-        in: query
-        description: The currency according to ISO 4217
-        required: false
-        schema:
-          default: EUR
-          type: string
-      - name: amount
-        in: query
-        description: The amount with a maximum of two decimal places
-        required: false
-        schema:
-          format: float
-          type: number
-      - name: reference
-        in: query
-        description: The payment reference
-        required: false
-        schema:
-          type: string
-      - name: text
-        in: query
-        description: The bank transfer text
-        required: false
-        schema:
-          type: string
-      - name: size
-        in: query
-        description: The size of the QR code in pixels
-        required: false
-        schema:
-          format: int32
-          default: 300
-          maximum: 2000
-          minimum: 100
-          type: integer
-      - name: frame
-        in: query
-        description: Draw a frame around the QR code
-        required: false
-        schema:
-          default: false
-          type: boolean
-      - name: message
-        in: query
-        description: A user hint
-        required: false
-        schema:
-          type: string
+        - name: bic
+          in: query
+          description: The bank identifier code of the recipient bank
+          required: false
+          schema:
+            type: string
+        - name: iban
+          in: query
+          description: The international bank account number of the recipient
+          required: true
+          schema:
+            type: string
+        - name: recipient
+          in: query
+          description: The recipients name
+          required: true
+          schema:
+            type: string
+        - name: currency
+          in: query
+          description: The currency according to ISO 4217
+          required: false
+          schema:
+            default: EUR
+            type: string
+        - name: amount
+          in: query
+          description: The amount with a maximum of two decimal places
+          required: false
+          schema:
+            format: float
+            type: number
+        - name: reference
+          in: query
+          description: The payment reference
+          required: false
+          schema:
+            type: string
+        - name: text
+          in: query
+          description: The bank transfer text
+          required: false
+          schema:
+            type: string
+        - name: size
+          in: query
+          description: The size of the QR code in pixels
+          required: false
+          schema:
+            format: int32
+            default: 300
+            maximum: 2000
+            minimum: 100
+            type: integer
+        - name: frame
+          in: query
+          description: Draw a frame around the QR code
+          required: false
+          schema:
+            default: false
+            type: boolean
+        - name: message
+          in: query
+          description: A user hint
+          required: false
+          schema:
+            type: string
       responses:
         "200":
           description: OK
           content:
             image/png:
               schema:
-                format: binary
+                format: byte
                 type: string
     post:
       tags:
-      - EPC QR Code
+        - EPC QR Code
       summary: Generate a valid EPC QR Code
       operationId: generateEpcQrCodeJson
       requestBody:
@@ -129,21 +129,21 @@ paths:
           content:
             image/png:
               schema:
-                format: binary
+                format: byte
                 type: string
   /v1/vat-verification:
     get:
       tags:
-      - Verify VAT ID
+        - Verify VAT ID
       summary: Verify a companies VAT ID if it is valid
       operationId: verifyVatId
       parameters:
-      - name: vatId
-        in: query
-        description: The VAT ID to check.
-        required: true
-        schema:
-          type: string
+        - name: vatId
+          in: query
+          description: The VAT ID to check.
+          required: true
+          schema:
+            type: string
       responses:
         "200":
           description: OK
@@ -153,7 +153,7 @@ paths:
                 $ref: '#/components/schemas/VatVerificationResult'
     post:
       tags:
-      - Verify VAT ID
+        - Verify VAT ID
       summary: Verify a companies VAT ID if it is valid
       operationId: verifyVatIdJson
       requestBody:
@@ -173,25 +173,25 @@ paths:
   /v1/geocode/search:
     get:
       tags:
-      - Geocoding
+        - Geocoding
       summary: Convert a known address to geo-coordinates
       operationId: geocodeSearch
       parameters:
-      - name: query
-        in: query
-        description: "A free-text address query. For example: \"Heldenplatz, Wien\"\
+        - name: query
+          in: query
+          description: "A free-text address query. For example: \"Heldenplatz, Wien\"\
           \ or \"Wiedner Hauptstraße 32, 1040 Wien\""
-        required: true
-        schema:
-          type: string
-      - name: language
-        in: query
-        description: "The language used for result localization based on ISO 639-1.\
+          required: true
+          schema:
+            type: string
+        - name: language
+          in: query
+          description: "The language used for result localization based on ISO 639-1.\
           \ For example: \"en\" or \"fr\""
-        required: false
-        schema:
-          default: en
-          type: string
+          required: false
+          schema:
+            default: en
+            type: string
       responses:
         "200":
           description: OK
@@ -204,7 +204,7 @@ paths:
             query.
     post:
       tags:
-      - Geocoding
+        - Geocoding
       summary: Convert a known address to geo-coordinates
       operationId: geocodeSearchJson
       requestBody:
@@ -227,34 +227,34 @@ paths:
   /v1/geocode/reverse:
     get:
       tags:
-      - Reverse Geocoding
+        - Reverse Geocoding
       summary: Convert geo-coordinates to a postal address
       operationId: geocodeReverse
       parameters:
-      - name: latitude
-        in: query
-        description: The latitude coordinate of a point to search for. For example
-          "48.20661"
-        required: true
-        schema:
-          format: double
-          type: number
-      - name: longitude
-        in: query
-        description: The longitude coordinate of a point to search for. For example
-          "16.36301"
-        required: true
-        schema:
-          format: double
-          type: number
-      - name: language
-        in: query
-        description: "The language used for result localization based on ISO 639-1.\
+        - name: latitude
+          in: query
+          description: The latitude coordinate of a point to search for. For example
+            "48.20661"
+          required: true
+          schema:
+            format: double
+            type: number
+        - name: longitude
+          in: query
+          description: The longitude coordinate of a point to search for. For example
+            "16.36301"
+          required: true
+          schema:
+            format: double
+            type: number
+        - name: language
+          in: query
+          description: "The language used for result localization based on ISO 639-1.\
           \ For example: \"en\" or \"fr\""
-        required: false
-        schema:
-          default: en
-          type: string
+          required: false
+          schema:
+            default: en
+            type: string
       responses:
         "200":
           description: OK
@@ -267,7 +267,7 @@ paths:
             coordinates.
     post:
       tags:
-      - Reverse Geocoding
+        - Reverse Geocoding
       summary: Convert geo-coordinates to a postal address
       operationId: geocodeReverseJson
       requestBody:
@@ -291,7 +291,7 @@ components:
   schemas:
     HtmlPayload:
       required:
-      - content
+        - content
       type: object
       properties:
         content:
@@ -343,8 +343,8 @@ components:
           type: boolean
     EpcQrCodePayload:
       required:
-      - iban
-      - recipient
+        - iban
+        - recipient
       type: object
       properties:
         bic:
@@ -386,7 +386,7 @@ components:
           type: string
     VatVerificationPayload:
       required:
-      - vatId
+        - vatId
       type: object
       properties:
         vatId:
@@ -394,7 +394,7 @@ components:
           type: string
     VatVerificationResult:
       required:
-      - valid
+        - valid
       type: object
       properties:
         valid:
@@ -411,7 +411,7 @@ components:
           type: string
     GeocodeSearchPayload:
       required:
-      - query
+        - query
       type: object
       properties:
         query:
@@ -425,8 +425,8 @@ components:
           type: string
     GeocodeReversePayload:
       required:
-      - latitude
-      - longitude
+        - latitude
+        - longitude
       type: object
       properties:
         latitude:
@@ -446,16 +446,16 @@ components:
           type: string
     GeocodeResult:
       required:
-      - address
-      - position
+        - address
+        - position
       type: object
       properties:
         position:
           description: "The coordinates (latitude, longitude) of a point on a map\
             \ corresponding to the searched place"
           required:
-          - latitude
-          - longitude
+            - latitude
+            - longitude
           type: object
           properties:
             latitude:

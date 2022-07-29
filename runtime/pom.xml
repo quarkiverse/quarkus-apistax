@@ -81,13 +81,13 @@
                             <generateApiDocumentation>false</generateApiDocumentation>
                             <generateSupportingFiles>true</generateSupportingFiles>
                             <packageName>io.quarkiverse.apistax</packageName>
-                            <invokerPackage>io.quarkiverse.apistax</invokerPackage>
                             <modelPackage>io.quarkiverse.apistax.models</modelPackage>
                             <apiPackage>io.quarkiverse.apistax.apis</apiPackage>
                             <library>native</library>
                             <configOptions>
                                 <sourceFolder>src/gen/java/main</sourceFolder>
                                 <dateLibrary>java8</dateLibrary>
+                                <useRuntimeException>true</useRuntimeException>
                             </configOptions>
                         </configuration>
                     </execution>

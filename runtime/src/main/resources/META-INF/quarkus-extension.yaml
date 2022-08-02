@@ -14,4 +14,4 @@ metadata:
   guide: https://quarkiverse.github.io/quarkiverse-docs/apistax/dev/
   categories:
     - "miscellaneous"
-  status: "preview"
+  status: "stable"

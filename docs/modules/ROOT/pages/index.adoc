@@ -2,13 +2,13 @@
 
 include::./includes/attributes.adoc[]
 
-TIP: Describe what the extension does here.
+Quarkus APIstax is a complete Java client implementation for the link:https://apistax.io/[APIstax] platform.
 
-== Installation
+== Usage
 
-If you want to use this extension, you need to add the `io.quarkiverse.apistax:quarkus-apistax` extension first to your build file.
+Add the following dependency to your build file:
 
-For instance, with Maven, add the following dependency to your POM file:
+=== Maven pom.xml
 
 [source,xml,subs=attributes+]
 ----
@@ -19,9 +19,40 @@ For instance, with Maven, add the following dependency to your POM file:
 </dependency>
 ----
 
+=== Gradle build.gradle
+
+[source,groovy,subs=attributes+]
+----
+implementation("io.quarkiverse.apistax:quarkus-apistax:{project-version}")
+----
+
+Get your APIstax API key link:https://app.apistax.io/api-keys[here] and add it to your application.properties file:
+
+[source,properties,subs=attributes+]
+----
+quarkus.apistax.api-key=API-KEY
+----
+
+Inject an `APIstaxClient` and start using it.
+
+[source,java,subs=attributes+]
+----
+@ApplicationScoped
+public class VatService {
+
+    @Inject
+    APIstaxClient client;
+
+    public boolean isValid(String vatId) {
+        VatVerificationResult result = client.verifyVatId(vatId);
+        return result.getValid() == true;
+    }
+}
+----
+
+The further information and documentation about the APIs can be found on link:https://apistax.io/docs[APIstax documentation] page.
+
 [[extension-configuration-reference]]
 == Extension Configuration Reference
 
-TIP: Remove this section if you don't have Quarkus configuration properties in your extension.
-
-include::includes/quarkus-apistax.adoc[leveloffset=+1, opts=optional]
+include::includes/quarkus-apistax.adoc[leveloffset=+1,opts=optional]

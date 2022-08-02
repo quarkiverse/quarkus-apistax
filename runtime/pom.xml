@@ -7,7 +7,7 @@
         <version>999-SNAPSHOT</version>
     </parent>
     <artifactId>quarkus-apistax</artifactId>
-    <name>Quarkus Apistax - Runtime</name>
+    <name>Quarkus APIstax - Runtime</name>
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
@@ -74,7 +74,7 @@
                             <generatorName>java</generatorName>
                             <generateModelTests>false</generateModelTests>
                             <generateModelDocumentation>false</generateModelDocumentation>
-                            <generateApis>true</generateApis>
+                            <generateApis>false</generateApis>
                             <generateApiTests>false</generateApiTests>
                             <generateApiDocumentation>false</generateApiDocumentation>
                             <generateSupportingFiles>true</generateSupportingFiles>

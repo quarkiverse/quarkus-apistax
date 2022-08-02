@@ -1,9 +1,17 @@
-name: Apistax
-description: Secure and reliable APIs for your common business needs.
+name: APIstax
+description: Secure and reliable APIs for your common business needs. Produce PDFs from HTML. Generate EU payment QR codes. Verify VAT numbers of european companies. Geocoding and reverse geocoding.
 metadata:
   keywords:
     - apistax
-  guide: https://quarkiverse.github.io/quarkiverse-docs/apistax/dev/
+    - vat-verification
+    - htmltopdf
+    - pdf-generation
+    - geocoding
+    - reverse-geocoding
+    - payment-qr-code
+    - epc-qr-code
+    - girocode
+  guide: https://quarkiverse.github.io/quarkiverse-docs/quarkus-apistax/dev/
   categories:
     - "miscellaneous"
-  status: "preview"
+  status: "stable"

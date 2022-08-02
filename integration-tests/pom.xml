@@ -7,7 +7,7 @@
     <version>999-SNAPSHOT</version>
   </parent>
   <artifactId>quarkus-apistax-integration-tests</artifactId>
-  <name>Quarkus Apistax - Integration Tests</name>
+  <name>Quarkus APIstax - Integration Tests</name>
   <properties>
     <skipITs>true</skipITs>
   </properties>

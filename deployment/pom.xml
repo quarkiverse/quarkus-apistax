@@ -4,7 +4,7 @@
   <parent>
     <groupId>io.quarkiverse.apistax</groupId>
     <artifactId>quarkus-apistax-parent</artifactId>
-    <version>999-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
   <artifactId>quarkus-apistax-deployment</artifactId>
   <name>Quarkus APIstax - Deployment</name>

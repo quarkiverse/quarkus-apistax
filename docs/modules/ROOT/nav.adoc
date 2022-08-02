@@ -1,1 +1,1 @@
-* xref:index.adoc[Quarkus Apistax]
+* xref:index.adoc[Quarkus APIstax]

@@ -1,4 +1,4 @@
-= Quarkus Apistax
+= Quarkus APIstax
 
 include::./includes/attributes.adoc[]
 

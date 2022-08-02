@@ -9,7 +9,7 @@
         <version>0.1.0-SNAPSHOT</version>
     </parent>
     <artifactId>quarkus-apistax</artifactId>
-    <name>Quarkus Apistax - Runtime</name>
+    <name>Quarkus APIstax - Runtime</name>
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>

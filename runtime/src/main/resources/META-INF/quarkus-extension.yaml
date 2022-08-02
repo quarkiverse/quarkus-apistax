@@ -11,7 +11,7 @@ metadata:
     - payment-qr-code
     - epc-qr-code
     - girocode
-  guide: https://quarkiverse.github.io/quarkiverse-docs/apistax/dev/
+  guide: https://quarkiverse.github.io/quarkiverse-docs/quarkus-apistax/dev/
   categories:
     - "miscellaneous"
   status: "stable"

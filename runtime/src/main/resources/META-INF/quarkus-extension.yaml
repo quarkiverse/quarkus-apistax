@@ -3,6 +3,14 @@ description: Secure and reliable APIs for your common business needs. Produce PD
 metadata:
   keywords:
     - apistax
+    - vat-verification
+    - htmltopdf
+    - pdf-generation
+    - geocoding
+    - reverse-geocoding
+    - payment-qr-code
+    - epc-qr-code
+    - girocode
   guide: https://quarkiverse.github.io/quarkiverse-docs/apistax/dev/
   categories:
     - "miscellaneous"

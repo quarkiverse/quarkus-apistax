@@ -9,7 +9,7 @@ import io.apistax.client.models.ErrorMessage;
 import org.jboss.jandex.DotName;
 
 import io.quarkiverse.apistax.APIstaxProducer;
-import io.quarkiverse.apistax.models.*;
+import io.apistax.models.*;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;

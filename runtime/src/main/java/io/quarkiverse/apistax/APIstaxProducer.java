@@ -1,5 +1,7 @@
 package io.quarkiverse.apistax;
 
+import io.apistax.client.APIstaxClient;
+
 import javax.enterprise.context.Dependent;
 import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
@@ -14,6 +16,8 @@ public class APIstaxProducer {
     @Produces
     @Dependent
     public APIstaxClient produceClient() {
-        return new APIstaxClientImpl(configuration.apiKey);
+        return new APIstaxClient.Builder()
+                .apiKey(configuration.apiKey)
+                .build();
     }
 }

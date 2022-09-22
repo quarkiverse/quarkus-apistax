@@ -2,14 +2,14 @@ package io.quarkiverse.apistax.deployment;
 
 import java.util.stream.Stream;
 
+import org.jboss.jandex.DotName;
+
 import io.apistax.client.APIstaxClient;
 import io.apistax.client.APIstaxClientImpl;
 import io.apistax.client.APIstaxException;
 import io.apistax.client.models.ErrorMessage;
-import org.jboss.jandex.DotName;
-
-import io.quarkiverse.apistax.APIstaxProducer;
 import io.apistax.models.*;
+import io.quarkiverse.apistax.APIstaxProducer;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;

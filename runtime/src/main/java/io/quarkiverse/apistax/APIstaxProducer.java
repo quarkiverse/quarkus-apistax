@@ -1,11 +1,11 @@
 package io.quarkiverse.apistax;
 
-import io.apistax.client.APIstaxClient;
-
 import javax.enterprise.context.Dependent;
 import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
 import javax.inject.Singleton;
+
+import io.apistax.client.APIstaxClient;
 
 @Singleton
 public class APIstaxProducer {

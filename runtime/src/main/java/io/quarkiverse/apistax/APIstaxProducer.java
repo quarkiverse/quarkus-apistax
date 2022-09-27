@@ -5,6 +5,8 @@ import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
+import io.apistax.client.APIstaxClient;
+
 @Singleton
 public class APIstaxProducer {
 
@@ -14,6 +16,8 @@ public class APIstaxProducer {
     @Produces
     @Dependent
     public APIstaxClient produceClient() {
-        return new APIstaxClientImpl(configuration.apiKey);
+        return new APIstaxClient.Builder()
+                .apiKey(configuration.apiKey)
+                .build();
     }
 }

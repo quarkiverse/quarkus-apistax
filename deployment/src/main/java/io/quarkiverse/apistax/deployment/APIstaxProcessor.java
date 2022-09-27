@@ -4,10 +4,12 @@ import java.util.stream.Stream;
 
 import org.jboss.jandex.DotName;
 
-import io.quarkiverse.apistax.APIstaxClient;
-import io.quarkiverse.apistax.APIstaxException;
+import io.apistax.client.APIstaxClient;
+import io.apistax.client.APIstaxClientImpl;
+import io.apistax.client.APIstaxException;
+import io.apistax.client.models.ErrorMessage;
+import io.apistax.models.*;
 import io.quarkiverse.apistax.APIstaxProducer;
-import io.quarkiverse.apistax.models.*;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;
@@ -31,14 +33,12 @@ class APIstaxProcessor {
     }
 
     @BuildStep
-    void registerForReflection(CombinedIndexBuildItem index, BuildProducer<ReflectiveClassBuildItem> reflectionClasses)
-            throws ClassNotFoundException {
-
+    void registerForReflection(CombinedIndexBuildItem index, BuildProducer<ReflectiveClassBuildItem> reflectionClasses) {
         var modelClasses = Stream.of(
                 EpcQrCodePayload.class, GeocodeResult.class, GeocodeResultAddress.class, GeocodeResultPosition.class,
                 GeocodeReversePayload.class, GeocodeSearchPayload.class, HtmlPayload.class, VatVerificationPayload.class,
                 VatVerificationResult.class, ErrorMessage.class, APIstaxException.class, APIstaxClient.class,
-                Class.forName(APIstaxClient.class.getName() + "Impl"))
+                APIstaxClientImpl.class)
                 .map(aClass -> DotName.createSimple(aClass.getName()))
                 .map(DotName::toString)
                 .toArray(String[]::new);

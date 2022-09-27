@@ -2,13 +2,13 @@ package io.quarkiverse.apistax.test;
 
 import javax.inject.Inject;
 
-import io.apistax.client.APIstaxClient;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;
 
+import io.apistax.client.APIstaxClient;
 import io.quarkus.test.QuarkusUnitTest;
 
 public class APIstaxTest {

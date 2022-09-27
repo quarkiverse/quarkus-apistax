@@ -16,7 +16,7 @@
         <dependency>
             <groupId>io.apistax</groupId>
             <artifactId>apistax-client</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </dependency>
     </dependencies>
     <build>

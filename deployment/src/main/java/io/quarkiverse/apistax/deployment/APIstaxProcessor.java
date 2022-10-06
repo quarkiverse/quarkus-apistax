@@ -7,7 +7,6 @@ import org.jboss.jandex.DotName;
 import io.apistax.client.APIstaxClient;
 import io.apistax.client.APIstaxClientImpl;
 import io.apistax.client.APIstaxException;
-import io.apistax.client.models.ErrorMessage;
 import io.apistax.models.*;
 import io.quarkiverse.apistax.APIstaxProducer;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;

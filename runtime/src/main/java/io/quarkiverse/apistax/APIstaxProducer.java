@@ -1,20 +1,19 @@
 package io.quarkiverse.apistax;
 
-import javax.enterprise.context.Dependent;
+import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
-import javax.inject.Singleton;
 
 import io.apistax.client.APIstaxClient;
 
-@Singleton
+@ApplicationScoped
 public class APIstaxProducer {
 
     @Inject
     APIstaxConfiguration configuration;
 
     @Produces
-    @Dependent
+    @ApplicationScoped
     public APIstaxClient produceClient() {
         return new APIstaxClient.Builder()
                 .apiKey(configuration.apiKey)

@@ -28,7 +28,7 @@
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-bom</artifactId>
-        <version>3.0.1.Final</version>
+        <version>3.1.2.Final</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>

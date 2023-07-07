@@ -1,5 +1,5 @@
 name: quarkus-apistax
-title: Quarkus APIstax
+title: APIstax
 version: dev
 nav:
   - modules/ROOT/nav.adoc

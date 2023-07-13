@@ -34,10 +34,10 @@ class APIstaxProcessor {
     @BuildStep
     void registerForReflection(CombinedIndexBuildItem index, BuildProducer<ReflectiveClassBuildItem> reflectionClasses) {
         var modelClasses = Stream.of(
-                        EpcQrCodePayload.class, GeocodeResult.class, GeocodeResultAddress.class, GeocodeResultPosition.class,
-                        GeocodeReversePayload.class, GeocodeSearchPayload.class, HtmlPayload.class, VatVerificationPayload.class,
-                        VatVerificationResult.class, ErrorMessage.class, APIstaxException.class, APIstaxClient.class,
-                        APIstaxClientImpl.class)
+                EpcQrCodePayload.class, GeocodeResult.class, GeocodeResultAddress.class, GeocodeResultPosition.class,
+                GeocodeReversePayload.class, GeocodeSearchPayload.class, HtmlPayload.class, VatVerificationPayload.class,
+                VatVerificationResult.class, ErrorMessage.class, APIstaxException.class, APIstaxClient.class,
+                APIstaxClientImpl.class)
                 .map(aClass -> DotName.createSimple(aClass.getName()))
                 .map(DotName::toString)
                 .toArray(String[]::new);

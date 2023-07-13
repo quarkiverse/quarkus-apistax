@@ -42,7 +42,12 @@ class APIstaxProcessor {
                 .map(DotName::toString)
                 .toArray(String[]::new);
 
-        reflectionClasses.produce(new ReflectiveClassBuildItem(true, true, modelClasses));
+        var buildItem = ReflectiveClassBuildItem.builder(modelClasses)
+                .methods(true)
+                .fields(true)
+                .build();
+
+        reflectionClasses.produce(buildItem);
     }
 
     @BuildStep

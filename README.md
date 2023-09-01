@@ -1,7 +1,7 @@
 # Quarkus APIstax
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![Build](https://github.com/quarkiverse/quarkus-apistax/workflows/Build/badge.svg)](https://github.com/quarkiverse/quarkus-apistax/actions?query=workflow%3ABuild)
 [![Maven Central](https://img.shields.io/maven-central/v/io.quarkiverse.apistax/quarkus-apistax-parent.svg?label=Maven%20Central)](https://search.maven.org/artifact/io.quarkiverse.apistax/quarkus-apistax-parent)
@@ -61,9 +61,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="http://instant-it.at"><img src="https://avatars.githubusercontent.com/u/1436448?v=4?s=100" width="100px;" alt=""/><br /><sub><b>David Andlinger</b></sub></a><br /><a href="https://github.com/quarkiverse/quarkus-apistax/commits?author=andlinger" title="Code">💻</a> <a href="#maintenance-andlinger" title="Maintenance">🚧</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="http://instant-it.at"><img src="https://avatars.githubusercontent.com/u/1436448?v=4?s=100" width="100px;" alt="David Andlinger"/><br /><sub><b>David Andlinger</b></sub></a><br /><a href="https://github.com/quarkiverse/quarkus-apistax/commits?author=andlinger" title="Code">💻</a> <a href="#maintenance-andlinger" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://gastaldi.wordpress.com"><img src="https://avatars.githubusercontent.com/u/54133?v=4?s=100" width="100px;" alt="George Gastaldi"/><br /><sub><b>George Gastaldi</b></sub></a><br /><a href="https://github.com/quarkiverse/quarkus-apistax/commits?author=gastaldi" title="Code">💻</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->

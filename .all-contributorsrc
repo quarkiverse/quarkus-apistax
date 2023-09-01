@@ -16,15 +16,6 @@
       ]
     },
     {
-      "login": "gsmet",
-      "name": "Guillaume Smet",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1279749?v=4",
-      "profile": "https://lesincroyableslivres.fr/",
-      "contributions": [
-        "code"
-      ]
-    },
-    {
       "login": "holzleitner",
       "name": "Max Holzleitner",
       "avatar_url": "https://avatars.githubusercontent.com/u/3810635?v=4",
@@ -32,6 +23,24 @@
       "contributions": [
         "code",
         "maintenance"
+      ]
+    },
+    {
+      "login": "gastaldi",
+      "name": "George Gastaldi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54133?v=4",
+      "profile": "http://gastaldi.wordpress.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "gsmet",
+      "name": "Guillaume Smet",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1279749?v=4",
+      "profile": "https://lesincroyableslivres.fr/",
+      "contributions": [
+        "code"
       ]
     }
   ],

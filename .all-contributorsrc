@@ -23,6 +23,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "holzleitner",
+      "name": "Max Holzleitner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3810635?v=4",
+      "profile": "http://instant-it.at",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,

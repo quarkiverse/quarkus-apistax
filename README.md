@@ -64,6 +64,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://instant-it.at"><img src="https://avatars.githubusercontent.com/u/1436448?v=4?s=100" width="100px;" alt="David Andlinger"/><br /><sub><b>David Andlinger</b></sub></a><br /><a href="https://github.com/quarkiverse/quarkus-apistax/commits?author=andlinger" title="Code">💻</a> <a href="#maintenance-andlinger" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://lesincroyableslivres.fr/"><img src="https://avatars.githubusercontent.com/u/1279749?v=4?s=100" width="100px;" alt="Guillaume Smet"/><br /><sub><b>Guillaume Smet</b></sub></a><br /><a href="https://github.com/quarkiverse/quarkus-apistax/commits?author=gsmet" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://instant-it.at"><img src="https://avatars.githubusercontent.com/u/3810635?v=4?s=100" width="100px;" alt="Max Holzleitner"/><br /><sub><b>Max Holzleitner</b></sub></a><br /><a href="https://github.com/quarkiverse/quarkus-apistax/commits?author=holzleitner" title="Code">💻</a> <a href="#maintenance-holzleitner" title="Maintenance">🚧</a></td>
     </tr>
   </tbody>

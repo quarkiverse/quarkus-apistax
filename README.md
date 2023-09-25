@@ -25,6 +25,7 @@ Add the following dependency to your build file:
 ```
 
 ### Gradle build.gradle
+
 ```groovy
 implementation("io.quarkiverse.apistax:quarkus-apistax:$latestVersion")
 ```
@@ -38,6 +39,7 @@ quarkus.apistax.api-key=API-KEY
 Inject an `APIstaxClient` and start using it.
 
 ```java
+
 @ApplicationScoped
 public class VatService {
 
@@ -51,7 +53,17 @@ public class VatService {
 }
 ```
 
-The further information and documentation about the APIs can be found on [APIstax documentation](https://apistax.io/docs) page.
+The further information and documentation about the APIs can be found
+on [APIstax documentation](https://apistax.io/docs) page.
+
+## Compatibility
+
+Quarkus APIstax provides multiple different version streams.
+
+| Quarkus     | Quarkus APIstax |
+|-------------|-----------------|
+| 3.2.x (LTS) | 1.x             |
+| 3.4.x       | 2.x             |
 
 ## Contributors ✨
 

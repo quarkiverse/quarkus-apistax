@@ -1,13 +1,7 @@
 package io.quarkiverse.apistax.deployment;
 
-import java.util.stream.Stream;
-
+import org.jboss.jandex.ClassInfo;
 import org.jboss.jandex.DotName;
-
-import io.apistax.client.APIstaxClient;
-import io.apistax.client.APIstaxClientImpl;
-import io.apistax.client.APIstaxException;
-import io.apistax.models.*;
 import io.quarkiverse.apistax.APIstaxProducer;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildProducer;
@@ -33,16 +27,18 @@ class APIstaxProcessor {
 
     @BuildStep
     void registerForReflection(CombinedIndexBuildItem index, BuildProducer<ReflectiveClassBuildItem> reflectionClasses) {
-        var modelClasses = Stream.of(
-                EpcQrCodePayload.class, GeocodeResult.class, GeocodeResultAddress.class, GeocodeResultPosition.class,
-                GeocodeReversePayload.class, GeocodeSearchPayload.class, HtmlPayload.class, VatVerificationPayload.class,
-                VatVerificationResult.class, ErrorMessage.class, APIstaxException.class, APIstaxClient.class,
-                APIstaxClientImpl.class)
-                .map(aClass -> DotName.createSimple(aClass.getName()))
+        var classes = index.getIndex()
+                .getSubpackages("io.apistax")
+                .stream()
+                .flatMap(subPkg -> index.getIndex()
+                        .getClassesInPackage(subPkg)
+                        .stream()
+                        .map(ClassInfo::name)
+                )
                 .map(DotName::toString)
                 .toArray(String[]::new);
 
-        var buildItem = ReflectiveClassBuildItem.builder(modelClasses)
+        var buildItem = ReflectiveClassBuildItem.builder(classes)
                 .methods(true)
                 .fields(true)
                 .build();

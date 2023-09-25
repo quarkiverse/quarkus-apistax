@@ -12,6 +12,7 @@ h|Default
 
 a| [[quarkus-apistax_quarkus.apistax.api-key]]`link:#quarkus-apistax_quarkus.apistax.api-key[quarkus.apistax.api-key]`
 
+
 [.description]
 --
 The APIstax API key. Get one via https://apistax.io

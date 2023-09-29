@@ -14,4 +14,13 @@ public class APIstaxConfiguration {
      */
     @ConfigItem
     public String apiKey;
+
+    /**
+     * Enables the mock mode.
+     * When enabled, requests are not send. Instead, fake data is returned.
+     *
+     * @asciidoclet
+     */
+    @ConfigItem(defaultValue = "false")
+    public Boolean mock;
 }

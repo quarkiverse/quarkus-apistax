@@ -1,10 +1,10 @@
 package io.quarkiverse.apistax;
 
+import java.nio.charset.StandardCharsets;
+
 import io.apistax.client.APIstaxClient;
 import io.apistax.client.APIstaxException;
 import io.apistax.models.*;
-
-import java.nio.charset.StandardCharsets;
 
 public class APIstaxClientMock implements APIstaxClient {
     @Override
@@ -54,13 +54,11 @@ public class APIstaxClientMock implements APIstaxClient {
                                 .country("Austria")
                                 .countryCode("AT")
                                 .street("Street")
-                                .houseNumber("1")
-                )
+                                .houseNumber("1"))
                 .position(
                         new GeocodeResultPosition()
                                 .latitude(48.208101)
-                                .longitude(16.373760)
-                );
+                                .longitude(16.373760));
     }
 
     @Override
@@ -72,13 +70,11 @@ public class APIstaxClientMock implements APIstaxClient {
                                 .country("Austria")
                                 .countryCode("AT")
                                 .street("Street")
-                                .houseNumber("1")
-                )
+                                .houseNumber("1"))
                 .position(
                         new GeocodeResultPosition()
                                 .latitude(48.208101)
-                                .longitude(16.373760)
-                );
+                                .longitude(16.373760));
     }
 
     @Override
@@ -90,13 +86,11 @@ public class APIstaxClientMock implements APIstaxClient {
                                 .country("Austria")
                                 .countryCode("AT")
                                 .street("Street")
-                                .houseNumber("1")
-                )
+                                .houseNumber("1"))
                 .position(
                         new GeocodeResultPosition()
                                 .latitude(payload.getLatitude())
-                                .longitude(payload.getLongitude())
-                );
+                                .longitude(payload.getLongitude()));
     }
 
     @Override
@@ -108,13 +102,11 @@ public class APIstaxClientMock implements APIstaxClient {
                                 .country("Austria")
                                 .countryCode("AT")
                                 .street("Street")
-                                .houseNumber("1")
-                )
+                                .houseNumber("1"))
                 .position(
                         new GeocodeResultPosition()
                                 .latitude(v)
-                                .longitude(v1)
-                );
+                                .longitude(v1));
     }
 
     @Override
@@ -123,14 +115,14 @@ public class APIstaxClientMock implements APIstaxClient {
                 .id(index.getValue())
                 .frequency(indexFrequency);
 
-        if(indexFrequency == IndexFrequency.YEARLY) {
-            for(int i = 0; i < 10; i++) {
+        if (indexFrequency == IndexFrequency.YEARLY) {
+            for (int i = 0; i < 10; i++) {
                 result = result.addValuesItem(indexValue(2000 + i, 100f + i));
             }
         } else {
-            for(int i = 0; i < 10; i++) {
-                for(int j = 0; j < 12; j++) {
-                    result = result.addValuesItem(indexValue(2000 + i, 1 + j, 100f + i + (j  / 10f)));
+            for (int i = 0; i < 10; i++) {
+                for (int j = 0; j < 12; j++) {
+                    result = result.addValuesItem(indexValue(2000 + i, 1 + j, 100f + i + (j / 10f)));
                 }
             }
         }
@@ -157,7 +149,8 @@ public class APIstaxClientMock implements APIstaxClient {
     }
 
     @Override
-    public byte[] generateSwissQrInvoice(SwissQrInvoicePayload swissQrInvoicePayload, SwissQrInvoiceFormat swissQrInvoiceFormat) throws APIstaxException {
+    public byte[] generateSwissQrInvoice(SwissQrInvoicePayload swissQrInvoicePayload, SwissQrInvoiceFormat swissQrInvoiceFormat)
+            throws APIstaxException {
         return "SWISS_QR_INVOICE".getBytes(StandardCharsets.UTF_8);
     }
 }

@@ -2,6 +2,7 @@ package io.quarkiverse.apistax.deployment;
 
 import org.jboss.jandex.ClassInfo;
 import org.jboss.jandex.DotName;
+
 import io.quarkiverse.apistax.APIstaxProducer;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildProducer;

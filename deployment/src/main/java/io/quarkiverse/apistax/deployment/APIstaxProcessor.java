@@ -33,8 +33,7 @@ class APIstaxProcessor {
                 .flatMap(subPkg -> index.getIndex()
                         .getClassesInPackage(subPkg)
                         .stream()
-                        .map(ClassInfo::name)
-                )
+                        .map(ClassInfo::name))
                 .map(DotName::toString)
                 .toArray(String[]::new);
 

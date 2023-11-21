@@ -1,5 +1,6 @@
 package io.quarkiverse.apistax;
 
+import io.apistax.client.APIstaxClientMock;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.inject.Produces;
 import jakarta.inject.Inject;

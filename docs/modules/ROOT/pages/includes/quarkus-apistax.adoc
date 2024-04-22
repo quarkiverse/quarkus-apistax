@@ -10,7 +10,7 @@ h|[[quarkus-apistax_configuration]]link:#quarkus-apistax_configuration[Configura
 h|Type
 h|Default
 
-a| [[quarkus-apistax_quarkus.apistax.api-key]]`link:#quarkus-apistax_quarkus.apistax.api-key[quarkus.apistax.api-key]`
+a| [[quarkus-apistax_quarkus-apistax-api-key]]`link:#quarkus-apistax_quarkus-apistax-api-key[quarkus.apistax.api-key]`
 
 
 [.description]
@@ -27,7 +27,7 @@ endif::add-copy-button-to-env-var[]
 |required icon:exclamation-circle[title=Configuration property is required]
 
 
-a| [[quarkus-apistax_quarkus.apistax.mock]]`link:#quarkus-apistax_quarkus.apistax.mock[quarkus.apistax.mock]`
+a| [[quarkus-apistax_quarkus-apistax-mock]]`link:#quarkus-apistax_quarkus-apistax-mock[quarkus.apistax.mock]`
 
 
 [.description]

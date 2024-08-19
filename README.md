@@ -64,7 +64,7 @@ Quarkus APIstax provides multiple different version streams.
 |-------------|-----------------|
 | 3.2.x (LTS) | 1.x             |
 | 3.8.x (LTS) | 2.x             |
-| 3.10.x      | 3.x             |
+| 3.13.x      | 3.x             |
 
 ## Contributors ✨
 

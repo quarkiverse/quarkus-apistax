@@ -60,11 +60,11 @@ on [APIstax documentation](https://apistax.io/docs) page.
 
 Quarkus APIstax provides multiple different version streams.
 
-| Quarkus     | Quarkus APIstax |
-|-------------|-----------------|
-| 3.2.x (LTS) | 1.x             |
-| 3.8.x (LTS) | 2.x             |
-| 3.13.x      | 3.x             |
+| Quarkus      | Quarkus APIstax |
+|--------------|-----------------|
+| 3.2.x (LTS)  | 1.x             |
+| 3.8.x (LTS)  | 2.x             |
+| 3.15.x (LTS) | 3.x             |
 
 ## Contributors ✨
 

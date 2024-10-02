@@ -1,4 +1,4 @@
 name: Quarkus APIstax
 release:
-  current-version: "3.0.5"
+  current-version: "3.0.6"
   next-version: "3.1.0-SNAPSHOT"

@@ -1,19 +1,20 @@
 package io.quarkiverse.apistax;
 
-import io.quarkus.runtime.annotations.ConfigItem;
 import io.quarkus.runtime.annotations.ConfigPhase;
 import io.quarkus.runtime.annotations.ConfigRoot;
+import io.smallrye.config.ConfigMapping;
+import io.smallrye.config.WithDefault;
 
-@ConfigRoot(name = "apistax", phase = ConfigPhase.RUN_TIME)
-public class APIstaxConfiguration {
+@ConfigRoot(phase = ConfigPhase.RUN_TIME)
+@ConfigMapping(prefix = "quarkus.apistax")
+public interface APIstaxConfiguration {
 
     /**
      * The APIstax API key. Get one via https://apistax.io
      *
      * @asciidoclet
      */
-    @ConfigItem
-    public String apiKey;
+    String apiKey();
 
     /**
      * Enables the mock mode.
@@ -21,6 +22,6 @@ public class APIstaxConfiguration {
      *
      * @asciidoclet
      */
-    @ConfigItem(defaultValue = "false")
-    public Boolean mock;
+    @WithDefault("false")
+    Boolean mock();
 }

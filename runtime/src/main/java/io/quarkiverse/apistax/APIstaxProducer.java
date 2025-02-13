@@ -16,11 +16,11 @@ public class APIstaxProducer {
     @Produces
     @ApplicationScoped
     public APIstaxClient produceClient() {
-        if (configuration.mock) {
+        if (configuration.mock()) {
             return new APIstaxClientMock();
         } else {
             return new APIstaxClient.Builder()
-                    .apiKey(configuration.apiKey)
+                    .apiKey(configuration.apiKey())
                     .build();
         }
     }

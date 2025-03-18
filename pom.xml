@@ -30,14 +30,14 @@
     <maven.compiler.release>11</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <quarkus.version>3.8.4</quarkus.version>
+    <quarkus.version>3.8.6.1</quarkus.version>
   </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-bom</artifactId>
-        <version>3.8.4</version>
+        <version>3.8.6.1</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>

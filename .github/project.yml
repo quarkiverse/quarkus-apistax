@@ -3,4 +3,4 @@ release:
   current-version: "4.0.3"
   next-version: "4.1.0-SNAPSHOT"
   pre-release: false
-  latest: true
+  latest: false

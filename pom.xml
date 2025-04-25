@@ -4,7 +4,7 @@
   <parent>
     <groupId>io.quarkiverse</groupId>
     <artifactId>quarkiverse-parent</artifactId>
-    <version>19</version>
+    <version>20</version>
   </parent>
   <groupId>io.quarkiverse.apistax</groupId>
   <artifactId>quarkus-apistax-parent</artifactId>
@@ -29,14 +29,14 @@
     <maven.compiler.release>11</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <quarkus.version>3.21.0</quarkus.version>
+    <quarkus.version>3.21.4</quarkus.version>
   </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-bom</artifactId>
-        <version>3.21.0</version>
+        <version>3.21.4</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>

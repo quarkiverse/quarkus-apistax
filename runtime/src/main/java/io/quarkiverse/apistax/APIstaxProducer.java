@@ -6,7 +6,6 @@ import jakarta.inject.Inject;
 
 import io.apistax.client.APIstaxClient;
 import io.apistax.client.APIstaxClientMock;
-import org.eclipse.microprofile.config.ConfigProvider;
 
 @ApplicationScoped
 public class APIstaxProducer {

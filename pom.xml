@@ -8,7 +8,7 @@
   </parent>
   <groupId>io.quarkiverse.apistax</groupId>
   <artifactId>quarkus-apistax-parent</artifactId>
-  <version>6.1.0-SNAPSHOT</version>
+  <version>6.1.0</version>
   <packaging>pom</packaging>
 
   <name>Quarkus APIstax - Parent</name>
@@ -22,7 +22,7 @@
     <connection>scm:git:git@github.com:quarkiverse/quarkus-apistax.git</connection>
     <developerConnection>scm:git:git@github.com:quarkiverse/quarkus-apistax.git</developerConnection>
     <url>https://github.com/quarkiverse/quarkus-apistax</url>
-    <tag>HEAD</tag>
+    <tag>6.1.0</tag>
   </scm>
   <properties>
     <compiler-plugin.version>3.13.0</compiler-plugin.version>

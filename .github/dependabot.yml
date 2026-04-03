@@ -22,6 +22,8 @@ updates:
       interval: "daily"
     target-branch: "4.x"
     ignore:
+      - dependency-name: "quarkus.version"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
       - dependency-name: "io.quarkus.platform:quarkus-bom"
         update-types: ["version-update:semver-major", "version-update:semver-minor"]
   - package-ecosystem: "github-actions"
@@ -36,6 +38,8 @@ updates:
       interval: "daily"
     target-branch: "5.x"
     ignore:
+      - dependency-name: "quarkus.version"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
       - dependency-name: "io.quarkus.platform:quarkus-bom"
         update-types: ["version-update:semver-major", "version-update:semver-minor"]
   - package-ecosystem: "github-actions"
@@ -50,6 +54,8 @@ updates:
       interval: "daily"
     target-branch: "6.x"
     ignore:
+      - dependency-name: "quarkus.version"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
       - dependency-name: "io.quarkus.platform:quarkus-bom"
         update-types: ["version-update:semver-major", "version-update:semver-minor"]
   - package-ecosystem: "github-actions"
